@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './pramish.css';
 import axios from 'axios';
 import NumberFormat from 'react-number-format'
+import {Link} from "react-router-dom";
+
 
 
 class Pramish extends Component {
@@ -45,15 +47,16 @@ class Pramish extends Component {
 
 
         ))}
+          <footer>
+              <ul>
+                  <li onClick={this.reload}>Re:search</li>
+                  <li><Link to = "">Back to Home</Link></li>
+              </ul>
+          </footer>
       </div>
     );
 
-    <footer>
-    <ul>
-        <li onClick={this.reload}>Re:search</li>
-        <li><Link to = "">Back to Home</Link></li>
-    </ul>
-</footer>
+
   }
 }
 
